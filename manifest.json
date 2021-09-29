@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Email Applauder",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://mail.google.com/mail/u/0/*"],
+            "js": ["script.js"]
+          }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "applause.mp3" ],
+            "matches": [ "https://mail.google.com/*" ]
+        }
+    ]
+}
