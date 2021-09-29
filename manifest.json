@@ -6,6 +6,7 @@
         "default_popup": "index.html",
         "default_icon": "icon.png"
     },
+    "description": "Hear a nice applause every time you send an email in Gmail.",
     "permissions": [
         "tabs",
         "scripting"
