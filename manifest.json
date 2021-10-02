@@ -7,13 +7,9 @@
         "default_icon": "icon.png"
     },
     "description": "Hear a nice applause every time you send an email in Gmail.",
-    "permissions": [
-        "tabs",
-        "scripting"
-    ],
     "content_scripts": [
         {
-            "matches": ["https://mail.google.com/mail/u/0/*"],
+            "matches": ["https://mail.google.com/mail/u/*"],
             "js": ["script.js"]
           }
     ],
